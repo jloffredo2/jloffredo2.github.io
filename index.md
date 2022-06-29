@@ -7,6 +7,6 @@
 #
 layout: home
 ---
-<img src="Joseph loffredo.JPG" alt="" width="300" id = "profilepic"/>
+<div style="text-align: center;"><img src="Joseph loffredo.JPG" alt="" width="300"/>
 
 Joe Loffredo is a PhD student in the Department of Political Science focused in American Politics and Quantitative Methods. His research interests include American elections, public opinion, and representation. Joe graduated Phi Beta Kappa with a B.A. in Political Science and Statistics from the University of Rochester where he earned the James D. McGill Memorial Prize in Political Science. Prior to joining MIT, he worked at Civis Analytics. Joe is supported by the Jesse L. White, Jr. (1979) fund.

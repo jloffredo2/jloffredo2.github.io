@@ -8,10 +8,6 @@
 layout: home
 ---
 
-Cayman Blog Theme is a clean, responsive blogging theme for Jekyll. It is inspired by the Cayman Theme for Github Pages, which can be greatly used for single projects but not as blogging platform.
+# About
 
-This theme has instead all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
-
-Have a look at the Github page for more information.
-
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
+Joe Loffredo is a PhD student in the Department of Political Science focused in American Politics and Quantitative Methods. His research interests include American elections, public opinion, and representation. Joe graduated Phi Beta Kappa with a B.A. in Political Science and Statistics from the University of Rochester where he earned the James D. McGill Memorial Prize in Political Science. Prior to joining MIT, he worked at Civis Analytics. Joe is supported by the Jesse L. White, Jr. (1979) fund.

@@ -1,11 +1,13 @@
 ---
 layout: page
 title: Contact
-tagline: Create a contact form and you are good to go
+tagline: 
+permalink: /contact.html
 ref: contact
-order: 1
+order: 4
 ---
+I am excited to talk about my research, and always open to new collaborations.
 
-Jekyll is a great tool to create static sites but with static site, there's no backend to send your data to: that is why you need a third party service.
+Please get in touch!
 
-[Go to the Home Page]({{ '/' | absolute_url }})
+**Email:** loffredo (at) mit (dot) edu, joseph (dot) r (dot) loffredo (at) gmail (dot) com

@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Data
-tagline: What I'm doing now
+tagline:
 permalink: /data.html
 ref: data
-order: 4
+order: 3
 ---
 
-This is my data page.
+# Data
+* NCSL STATE ELECTIONS LEGISLATION DATABASE (2011-2022)
++ GitHub page: https://github.com/jloffredo2/state-elect-law-db
+
+# Code

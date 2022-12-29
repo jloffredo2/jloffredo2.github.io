@@ -7,4 +7,5 @@ ref: about
 order: 1
 ---
 
-My latest CV is currently under construction. Please check back soon!
+
+The most recent version of my curriculum vitae can be found [here](https://drive.google.com/file/d/134emuguxHSz6yPu1IkOgtPcEfeFWahgq/view?usp=share_link).

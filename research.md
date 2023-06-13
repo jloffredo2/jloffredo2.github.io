@@ -16,7 +16,7 @@ order: 2
 # Working Papers
 "Legislating Democracy: When State Legislators Change Access to the Ballot"
 
-"Where We Vote: The Changing Landscape of Where Americans Cast Votes'' (with Alejandro Flores](https://a-flores.com))
+"Where We Vote: The Changing Landscape of Where Americans Cast Votes'' (with [Alejandro Flores](https://a-flores.com))
 
 "Polling Places of Interest: How Where We Vote Shapes Voting Behavior"
 

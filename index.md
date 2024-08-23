@@ -4,7 +4,7 @@ layout: home
 ---
 
 <div style="float: right; margin-left: 20px;">
-  <img width="350" src="profile.jpeg" id="profile">
+  <img width="300" src="profile.jpeg" id="profile">
 </div>
 
 <p>Welcome! I am a PhD Candidate in the Department of Political Science at MIT focused in American Politics and Quantitative Methods. Additionally, I serve as a graduate student researcher at the <a href="https://electionlab.mit.edu">MIT Election Data and Science Lab</a>.</p>

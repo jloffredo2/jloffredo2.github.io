@@ -17,7 +17,7 @@ Teaching Assistant, Argument in Political Science (PSC 202W), University of Roch
 
 # Educational Materials
 ## American Politics General Exam Materials
-In 2023, I took the MIT American Politics general exam. In preparation for that exam, Alejandro Frydman, Gabrielle Péloquin-Skulski, and I compiled notes on relevant readings for both the study of political behavior and political institutions. These notes built on the great work of Chloe Wittenberg and other students from the department who took exams in the years before us. These notes were last updated in the summer of 2024. As a disclaimer, these materials should not substitute your own reading of the material, but do provide a good basis for preparing to take a general exam in American politics.
+In 2023, I took the MIT American Politics general exam. In preparation for that exam, Alejandro Frydman, Gabrielle Peloquin-Skulski, and I compiled notes on relevant readings for both the study of political behavior and political institutions. These notes built on the great work of Chloe Wittenberg and other students from the department who took exams in the years before us. These notes were last updated in the summer of 2024. As a disclaimer, these materials should not substitute your own reading of the material, but do provide a good basis for preparing to take a general exam in American politics.
 
 [American Political Behavior notes](https://drive.google.com/file/d/19scsz2LEmy6Ql8kaHYssIwyhg5oJI6Z-/view?usp=drive_link)
 

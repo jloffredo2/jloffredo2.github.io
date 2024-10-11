@@ -7,3 +7,4 @@ vendor/*
 .jekyll-metadata
 *.xml
 *.iml
+.DS_Store

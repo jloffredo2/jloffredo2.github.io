@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+
+% ----- page setup ----- %
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage[toc,page,header]{appendix}
+\usepackage{etoc}
+\usepackage{minitoc}
+\usepackage[all]{nowidow}
+
+% ----- citation setup ----- %
+\usepackage[authordate,isbn=false,doi=false]{biblatex-chicago}
+\addbibresource{references.bib}
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldset=addendum, null]
+      \step[fieldset=language, null]
+      \step[fieldset=note, null]
+    } 
+  }
+}
+
+% ----- math setup ----- %
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+% ----- figure and table setup ----- %
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{lscape}
+\usepackage{bbm}
+\usepackage{tabularx, booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{tabularray}
+\usepackage{codehigh}
+\usepackage[normalem]{ulem}
+\UseTblrLibrary{booktabs}
+\UseTblrLibrary{siunitx}
+\newcommand{\tinytableTabularrayUnderline}[1]{\underline{#1}}
+\newcommand{\tinytableTabularrayStrikeout}[1]{\sout{#1}}
+\NewTableCommand{\tinytableDefineColor}[3]{\definecolor{#1}{#2}{#3}}
+
+% ----- random utils ----- %
+\usepackage{url}  % print URLs
+\usepackage[super]{nth}
+
+
+% ----- author block ----- %
+\usepackage{authblk}
+
+% ----- fonts ----- %
+\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}
+\usepackage{microtype}
+
+% ----- links ----- %
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+    urlcolor=black,
+	linkcolor=black,
+	citecolor=black
+}
+
+% ----- title block setup ----- %
+\title{YOUR PAPER TITLE:\\{\Large{YOUR SUBTITLE}}\thefootnote\relax\footnotetext{Any acknowledgements you want to include. You can also make a note of where this paper is presented.}}
+
+\author{YOUR NAME\thanks{YOUR TITLE, Department of Political Science, MIT. \href{mailto:loffredo@mit.edu}{\tt YOUR EMAIL}}}
+\date{\today}
+
+% ---------------------- %
+% ----- begin text ----- %
+% ---------------------- %
+\begin{document}
+    \maketitle
+    \thispagestyle{empty}
+    \begin{abstract}
+        \noindent ENTER A PARAGRAPH OF ABOUT 200 WORDS OR LESS THAT DESCRIBES YOUR PAPER
+    \end{abstract}
+
+    
+    \clearpage
+    \pagenumbering{arabic}
+    \doublespacing
+
+    \section*{Introduction}
+
+    \section*{Theoretical Grounding}
+
+    \section*{Data \& Methods}
+
+    \section*{Results}
+
+    \section*{Discussion}
+
+    \newpage
+    \singlespacing
+    
+    \printbibliography
+    \newpage
+    \appendix 
+    \renewcommand\thetable{\thesubsection-\arabic{table}} % resets table and figure numbers for appendix
+    \renewcommand\thefigure{\thesubsection-\arabic{figure}} 
+    \renewcommand\thesubsection{\Alph{subsection}} 
+    
+    \renewcommand{\thepage}{A-\arabic{page}} 
+    \setcounter{page}{1}
+    \setcounter{figure}{0}
+    \setcounter{table}{0}
+    \setcounter{footnote}{0}
+    \singlespacing
+    
+    \section*{Appendix for ``YOUR PAPER TITILE"}
+    \vspace{5mm}
+    \localtableofcontents
+    \etocdepthtag.toc{mtappendix}
+    \etocsettagdepth{mtchapter}{none}
+    \etocsettagdepth{mtappendix}{subsection}
+    \clearpage
+
+    \subsection{Appendix Section 1}
+
+    \subsection{Appendix Section 2}
+
+\end{document}

@@ -7,5 +7,6 @@ ref: cv
 order: 1
 ---
 
+The most recent version of my curriculum vitae can be viewed below. Alternatively, you can download it [here](https://drive.google.com/file/d/134emuguxHSz6yPu1IkOgtPcEfeFWahgq/view?usp=share_link).
 
-The most recent version of my curriculum vitae can be found [here](https://drive.google.com/file/d/134emuguxHSz6yPu1IkOgtPcEfeFWahgq/view?usp=share_link).
+<iframe src="https://drive.google.com/file/d/134emuguxHSz6yPu1IkOgtPcEfeFWahgq/preview" width="100%" height="800px" style="border: none;"></iframe>

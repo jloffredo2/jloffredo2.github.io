@@ -16,6 +16,6 @@ Kuriwaki, Shiro, Mason Reece, Samuel Baltz, Aleksandra Conevska, **Joseph R. Lof
 
 "Where We Vote: The Changing Landscape of Where Americans Cast Votes'' (with [Alejandro Flores](https://a-flores.com))
 
-"Motivating Participation: Encouraging Minority Voters to Overcome the Costs of Voting" (with Christine M. Slaughter and Alejandro Flores)
+"Motivating Participation: Encouraging Minority Voters to Overcome the Costs of Voting" (with Christine M. Slaughter)
 
 "The Cost of Electoral Confidence" (with [Alejandro Flores](https://a-flores.com) and Charles Stewart III)

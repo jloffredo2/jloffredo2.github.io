@@ -22,3 +22,5 @@ Loffredo, Joseph R. and Suyeol Yun. 2025. "Agent-Enhanced Large Language Models\
 "Motivating Participation: Encouraging Minority Voters to Overcome the Costs of Voting" (with Christine M. Slaughter)
 
 "The Cost of Electoral Confidence" (with [Alejandro Flores](https://a-flores.com) and Charles Stewart III)
+
+"State Confidence in Elections: Results, Practice, and Policy" (with Charles Stewart III) 

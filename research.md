@@ -15,12 +15,12 @@ Jaffe, Jacob, **Joseph R. Loffredo**, Samuel Baltz, Alejandro Flores, and Charle
 **Loffredo, Joseph R.** and Suyeol Yun. 2025. "Agent-Enhanced Large Language Models for Researching Political Institutions."<details style="cursor: pointer;">**Abstract**: The applications of Large Language Models (LLMs) in political science are rapidly expanding. This paper demonstrates how LLMs, when augmented with predefined functions and specialized tools, can serve as dynamic agents capable of streamlining tasks such as data collection, preprocessing, and analysis. Central to this approach is Agentic RAG, which equips LLMs with action-calling capabilities for interaction with external knowledge bases. Beyond information retrieval, LLM agents incorporate modular tools for tasks like document summarization, transcript coding, qualitative variable classification, and statistical modeling, enabling adaptability across diverse research contexts. To demonstrate the potential of this approach, we introduce CongressRA, an LLM agent designed to support scholars studying the U.S. Congress. Through this example, we highlight how LLM agents can reduce the costs of replicating, testing, and extending empirical research using the domain-specific data that drives the study of political institutions. </details>
 
 # Working Papers
-"Legislating Democracy: When State Legislators Change Access to the Ballot"
+"Hidden Partisanship in American Elections" (with Mason Reece, Alejandro Flores, Samuel Baltz, and Charles Stewart III)
 
-"Where We Vote: The Changing Landscape of Where Americans Cast Votes'' (with [Alejandro Flores](https://a-flores.com))
+"Where We Vote: The Changing Landscape of Where Americans Cast Votes'' (with Alejandro Flores)
 
 "Motivating Participation: Encouraging Minority Voters to Overcome the Costs of Voting" (with Christine M. Slaughter)
 
-"The Cost of Electoral Confidence" (with [Alejandro Flores](https://a-flores.com) and Charles Stewart III)
+"State Confidence in Elections: Results, Practice, and Policy" (with Charles Stewart III)
 
-"State Confidence in Elections: Results, Practice, and Policy" (with Charles Stewart III) 
+"Protecting their own: The use of local districting to create incumbency (dis)advantages" (with Michael Hankinson and Asya Magazinnik)

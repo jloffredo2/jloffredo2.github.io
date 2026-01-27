@@ -27,4 +27,4 @@ Jaffe, Jacob, **Joseph R. Loffredo**, Samuel Baltz, Alejandro Flores, and Charle
 
 "Trends in Nationalization of State and Local Elections: Evidence from Precinct Data" (with Shigeo Hirano, Mason Reece, and James M. Snyder, Jr.)
 
-"Lines for Representation: The Limits of District Elections as a Remedy for Underrepresentation" (with Michael Hankinson and Asya Magazinnik)
+"Lines for Representation: Assessing District Elections as a Remedy in State Voting Rights Acts" (with Michael Hankinson and Asya Magazinnik)

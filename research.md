@@ -24,3 +24,7 @@ Jaffe, Jacob, **Joseph R. Loffredo**, Samuel Baltz, Alejandro Flores, and Charle
 "Where We Vote: The Changing Landscape of Where Americans Cast Votes'' (with Alejandro Flores)
 
 "State Confidence in Elections: Results, Practice, and Policy" (with Charles Stewart III)
+
+"Trends in Nationalization of State and Local Elections: Evidence from Precinct Data" (with Shigeo Hirano, Mason Reece, and James M. Snyder, Jr.)
+
+"Lines for Representation: The Limits of District Elections as a Remedy for Underrepresentation" (with Michael Hankinson and Asya Magazinnik)

@@ -1,0 +1,12 @@
+---
+title: "CV"
+---
+
+The most recent version of my CV can be viewed below or downloaded from [here](https://drive.google.com/file/d/134emuguxHSz6yPu1IkOgtPcEfeFWahgq/view?usp=share_link).
+
+::: {.cv-container}
+<iframe src="https://drive.google.com/file/d/134emuguxHSz6yPu1IkOgtPcEfeFWahgq/preview"
+        width="90%"
+        height="800px">
+</iframe>
+:::

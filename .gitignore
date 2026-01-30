@@ -1,10 +1,4 @@
-_site
-.sass-cache
-.bundle
-Gemfile.lock
-*.gem
-vendor/*
-.jekyll-metadata
-*.xml
-*.iml
+/.quarto/
+/_site/
 .DS_Store
+*.log

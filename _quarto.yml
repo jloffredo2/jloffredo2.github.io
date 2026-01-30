@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - CNAME
+    - .nojekyll
+
+website:
+  title: "Joe Loffredo"
+  site-url: "https://jloffredo2.github.io"
+  favicon: favicon.ico
+
+  navbar:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "CV"
+        href: cv.qmd
+      - text: "Data/Code"
+        href: data.qmd
+      - text: "Contact"
+        href: contact.qmd
+
+  page-footer:
+    left: |
+      © 2025 Joe Loffredo
+    right: |
+      Built with [Quarto](https://quarto.org)
+
+format:
+  html:
+    theme: [sandstone, custom.scss]
+    css: styles.css
+    toc: false

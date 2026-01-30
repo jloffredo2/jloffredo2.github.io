@@ -14,10 +14,10 @@ website:
     right:
       - text: "Home"
         href: index.qmd
-      - text: "Research"
-        href: research.qmd
       - text: "CV"
         href: cv.qmd
+      - text: "Research"
+        href: research.qmd
       - text: "Data/Code"
         href: data.qmd
       - text: "Contact"
@@ -25,7 +25,7 @@ website:
 
   page-footer:
     left: |
-      © 2025 Joe Loffredo
+      © <span id="current-year">2025</span> Joe Loffredo
     right: |
       Built with [Quarto](https://quarto.org)
 
@@ -34,3 +34,4 @@ format:
     theme: [sandstone, custom.scss]
     css: styles.css
     toc: false
+    include-after-body: update-copyright.html

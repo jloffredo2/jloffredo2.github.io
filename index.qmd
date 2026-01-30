@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "Joe Loffredo"
 ---
 
 ::: {.columns}
@@ -11,8 +12,8 @@ title: ""
     <i class="bi bi-twitter-x"></i>
     <span class="about-link-text">X</span>
   </a>
-  <a href="https://bsky.app/profile/jloffredo.bsky.social" class="about-link" target="_blank">
-    <i class="bi bi-cloud"></i>
+  <a href="https://bsky.app/profile/jloffredo.bsky.social" class="about-link bluesky-link" target="_blank">
+    <img src="bluesky-logo.png" alt="Bluesky" class="bluesky-logo">
     <span class="about-link-text">Bluesky</span>
   </a>
   <a href="https://github.com/jloffredo2" class="about-link" target="_blank">

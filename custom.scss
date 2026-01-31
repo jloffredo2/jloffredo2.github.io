@@ -223,10 +223,39 @@ details {
   }
 }
 
+// Compact spacing for homepage to fit on laptop screen
+p {
+  margin-bottom: 0.75rem !important;
+}
+
+h2 {
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+ul {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+li {
+  margin-bottom: 0.25rem !important;
+}
+
+hr {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.columns {
+  margin-bottom: 0.5rem !important;
+}
+
 // Reduce spacing between content and footer
 #quarto-content {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
+  padding-top: 1rem !important;
 }
 
 #quarto-document-content {
@@ -245,5 +274,5 @@ main.content {
 }
 
 footer {
-  margin-top: 0 !important;
+  margin-top: 0.5rem !important;
 }

@@ -20,6 +20,10 @@ pagetitle: "Joe Loffredo"
     <i class="bi bi-github"></i>
     <span class="about-link-text">GitHub</span>
   </a>
+  <a href="https://scholar.google.com/citations?user=KkAzKykAAAAJ&hl=en" class="about-link" target="_blank">
+    <img src="icons8-google-scholar-150.png" alt="Google Scholar" class="gscholar-logo">
+    <span class="about-link-text">Google Scholar</span>
+  </a>
   <a href="mailto:loffredo@mit.edu" class="about-link">
     <i class="bi bi-envelope"></i>
     <span class="about-link-text">Email</span>

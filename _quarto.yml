@@ -9,6 +9,7 @@ website:
   title: "Joe Loffredo"
   site-url: "https://jloffredo2.github.io"
   favicon: favicon.ico
+  google-analytics: "G-5QW563TC6P"
 
   navbar:
     right:

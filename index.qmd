@@ -6,7 +6,6 @@ pagetitle: "Joe Loffredo"
 ::: {.columns}
 ::: {.column width="30%"}
 ![](profile.jpeg){.profile-pic}
-
 <div class="about-links">
   <a href="https://twitter.com/JoeyLoffredo" class="about-link" target="_blank">
     <i class="bi bi-twitter-x"></i>

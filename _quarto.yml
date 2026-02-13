@@ -21,8 +21,6 @@ website:
         href: research.qmd
       - text: "Data/Code"
         href: data.qmd
-      - text: "Contact"
-        href: contact.qmd
 
   page-footer:
     left: |

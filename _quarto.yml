@@ -4,6 +4,7 @@ project:
   resources:
     - CNAME
     - .nojekyll
+    - CV/Loffredo_CV.pdf
 
 website:
   title: "Joe Loffredo"
@@ -16,7 +17,7 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "CV"
-        href: cv.qmd
+        href: CV/Loffredo_CV.pdf
       - text: "Research"
         href: research.qmd
       - text: "Data/Code"

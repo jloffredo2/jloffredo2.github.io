@@ -120,7 +120,7 @@ code {
 
   // Second wordmark line: small, MIT red, like the old hero eyebrow
   &::after {
-    content: "PhD Candidate in Political Science · MIT";
+    content: "PhD Candidate in Political Science, MIT";
     display: block;
     font-family: $font-family-sans-serif;
     font-size: .62rem;
@@ -163,6 +163,18 @@ code {
 @media (max-width: 991.98px) {
   .navbar .navbar-collapse { padding: 8px 0 14px; }
 
+  .navbar .navbar-title {
+    white-space: normal;
+    font-size: .95rem;
+    letter-spacing: .08em;
+
+    &::after {
+      white-space: normal;
+      font-size: .55rem;
+      letter-spacing: .1em;
+    }
+  }
+
   .navbar .navbar-nav .nav-link {
     display: inline-flex;
     width: max-content;
@@ -197,7 +209,7 @@ code {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.35fr .85fr;
+  grid-template-columns: 1.5fr .72fr;
   gap: 56px;
   align-items: center;
 }
@@ -218,7 +230,7 @@ code {
 
 .hero .bio {
   color: $body-text;
-  max-width: 40em;
+  max-width: 46em;
   margin-bottom: .6em;
   text-wrap: pretty;
 }
@@ -459,7 +471,6 @@ footer.footer .footer-copy {
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 30px;
-    text-align: center;
   }
 
   .hero .bio,
@@ -485,6 +496,4 @@ footer.footer .footer-copy {
   .hero h1 { font-size: 2.2rem; }
 
   .hero .tagline { font-size: 1.15rem; }
-
-  .navbar .navbar-title { font-size: 1rem; }
 }

@@ -1,278 +1,490 @@
 /*-- scss:defaults --*/
 
-// MIT Red color scheme
-$primary: #750014 !default;
-$link-color: #750014 !default;
+// MIT palette (https://brand.mit.edu/color)
+$mit-red:    #750014;
+$mit-red-dk: shade-color($mit-red, 22%);
+$mit-silver: #8A8B8C;
+
+// Neutral surfaces
+$ink:       #1a1a1a;
+$body-text: #33322f;
+$muted:     #6e6d6a;
+$bg:        #fafaf8;
+$surface:   #ffffff;
+$surface-2: #f2f2f0;
+$border-c:  #e6e5e2;
+
+// Bootstrap / Quarto variables
+$primary: $mit-red;
+$link-color: $mit-red;
+$body-bg: $bg;
+$body-color: $body-text;
+$font-family-sans-serif: "neue-haas-grotesk-text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family: "Roboto Serif", Georgia, "Times New Roman", serif;
+$headings-font-weight: 500;
+$font-size-root: 17px;
+$line-height-base: 1.65;
+$navbar-bg: $bg; // opaque light value => Quarto renders the navbar with data-bs-theme="light"
+$navbar-fg: $body-text;
+$footer-bg: $mit-red;
+$footer-fg: #f5e6e9;
+$grid-body-width: 1200px;
 
 /*-- scss:rules --*/
 
-// Homepage profile image and layout
-.profile-pic {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 8px;
-  object-fit: cover;
-  margin: 0 auto 1rem;
-  display: block;
+:root {
+  --radius: 14px;
+  --radius-sm: 9px;
+  --maxw: 1200px;
+  --shadow: 0 1px 2px rgba(27, 26, 23, .04), 0 8px 24px rgba(27, 26, 23, .06);
+  --shadow-hov: 0 2px 6px rgba(27, 26, 23, .06), 0 14px 40px rgba(27, 26, 23, .10);
 }
 
-.about-links {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  justify-content: center;
-
-  p {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 0;
-    justify-content: center;
-    width: 100%;
-  }
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-.about-link {
-  display: inline-flex;
-  align-items: center;
-  color: #555;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  padding: 0.25rem;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  i {
-    font-size: 1.5rem;
-  }
-
-  .about-link-text {
-    display: none;
-  }
-
-  // Twitter/X icon - black
-  .bi-twitter-x {
-    color: #000000;
-  }
-
-  // GitHub icon - dark gray/black
-  .bi-github {
-    color: #000000;
-  }
-
-  // Email icon - gray
-  .bi-envelope {
-    color: #000000;
-  }
+h1, h2, h3, h4 {
+  color: $ink;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
-// Bluesky logo styling
-.bluesky-link {
-  .bluesky-logo {
-    width: 1.5rem;
-    height: 1.5rem;
-    object-fit: contain;
-  }
-
-  &:hover .bluesky-logo {
-    opacity: 0.7;
-  }
-}
-
-// Ensure columns align properly on mobile
-@media (max-width: 768px) {
-  .columns {
-    display: block !important;
-
-    .column {
-      width: 100% !important;
-      margin-bottom: 2rem;
-    }
-
-    // First column (profile and links) should be centered
-    .column:first-child {
-      text-align: center;
-    }
-
-    // Other columns (text content) should be left-aligned
-    .column:not(:first-child) {
-      text-align: left;
-    }
-
-    .profile-pic {
-      margin: 0 auto 1rem;
-    }
-
-    .social-icons {
-      justify-content: center;
-    }
-  }
-}
-
-// Headings
-h1 {
-  font-size: 1.75rem;
-  margin-bottom: 1.5rem;
-  color: #000;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #000;
-}
-
-// Links use MIT red
 a {
-  color: $link-color;
+  color: $mit-red;
+  text-decoration: none;
+  transition: color .15s ease;
 
   &:hover {
-    color: darken($link-color, 10%);
+    color: $mit-red-dk;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }
 
-// Code elements use MIT red
 code {
-  color: $link-color;
-  background-color: #f8f9fa;
+  color: $mit-red;
+  background-color: $surface-2;
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
 
-// Details/summary for abstracts
-details {
-  margin: 0.5rem 0 0.5rem 0;
-  border-left: 3px solid transparent;
-  padding-left: 0;
-  transition: border-color 0.3s ease;
+// ---------- Navbar: sticky frosted topbar with pill links -------------------
+.navbar {
+  --bs-navbar-color: #{$body-text};
+  --bs-navbar-hover-color: #{$ink};
+  --bs-navbar-active-color: #{$mit-red};
+  --bs-navbar-brand-color: #{$ink};
+  --bs-navbar-brand-hover-color: #{$mit-red};
+  background: rgba(250, 250, 248, .85);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid $border-c;
+  box-shadow: none;
+  min-height: 66px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
-  &[open] {
-    border-left-color: $link-color;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
+@supports not (backdrop-filter: blur(10px)) {
+  .navbar { background: $bg; }
+}
+
+// Keep the header pinned while scrolling — Quarto's headroom.js otherwise
+// slides it away on scroll-down via this class.
+#quarto-header.headroom--unpinned {
+  transform: translateY(0) !important;
+}
+
+.navbar .navbar-container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.navbar .navbar-brand-container {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.navbar .navbar-title {
+  display: block;
+  font-family: $headings-font-family;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  // Second wordmark line: small, MIT red, like the old hero eyebrow
+  &::after {
+    content: "PhD Candidate in Political Science · MIT";
+    display: block;
+    font-family: $font-family-sans-serif;
+    font-size: .62rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    color: $mit-red;
+    margin-top: 2px;
   }
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: .93rem;
+  font-weight: 500;
+  letter-spacing: .01em;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: background .15s ease, color .15s ease;
+
+  &:hover {
+    background: $surface-2;
+    text-decoration: none;
+  }
+}
+
+.navbar .navbar-nav .nav-link.active .menu-text {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 2px;
+    border-radius: 2px;
+    background: $mit-red;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse { padding: 8px 0 14px; }
+
+  .navbar .navbar-nav .nav-link {
+    display: inline-flex;
+    width: max-content;
+    margin: 2px 0;
+  }
+
+  .navbar .navbar-nav .nav-link.active .menu-text::after { bottom: -4px; }
+}
+
+// Align body text with the 24px inner padding of the navbar/footer containers.
+// The #quarto-content prefix is needed to outrank Quarto's `#quarto-content > *`
+// padding rule.
+#quarto-content > main.content {
+  padding: 0 24px;
+  margin-top: 0;
+}
+
+// Don't stretch short pages to fill the viewport — keep the footer close to
+// the content instead of pinned to the bottom of the window. !important is
+// required: Quarto's nav JS sets an inline min-height on this element. Also
+// collapse the fixed 60px bottom row Quarto reserves in its page grid.
+#quarto-content {
+  min-height: 0 !important;
+
+  &.page-rows-contents {
+    grid-template-rows: [content-top] max-content [content-bottom] minmax(0, max-content) [page-bottom];
+  }
+}
+
+// ---------- Hero (homepage) --------------------------------------------------
+.hero { padding: 8px 0 8px; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.35fr .85fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.9rem;
+  margin-bottom: .35em;
+}
+
+.hero .tagline {
+  font-family: $headings-font-family;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: $ink;
+  font-weight: 400;
+  margin-bottom: .8em;
+}
+
+.hero .bio {
+  color: $body-text;
+  max-width: 40em;
+  margin-bottom: .6em;
+  text-wrap: pretty;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 5px solid $surface;
+  margin: 0 auto;
+  display: block;
+}
+
+// ---------- Sections ---------------------------------------------------------
+hr.divider {
+  border: 0;
+  border-top: 1px solid $border-c;
+  margin: 0;
+  opacity: 1;
+}
+
+#title-block-header.quarto-title-block {
+  margin-top: 22px;
+}
+
+main.content .quarto-title h1.title {
+  font-size: 1.9rem;
+  margin-bottom: .6em;
+}
+
+main.content h2 {
+  font-family: $font-family-sans-serif;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: $mit-red;
+  font-weight: 600;
+  border-bottom: 1px solid $border-c;
+  padding-bottom: 8px;
+  margin: 30px 0 18px;
+}
+
+main.content ul li::marker { color: $mit-red; }
+
+// ---------- Publications -----------------------------------------------------
+.pub {
+  padding: 14px 0;
+  border-bottom: 1px solid $border-c;
+
+  &:last-child { border-bottom: 0; }
+
+  p { margin-bottom: .4rem; }
+
+  strong { color: $ink; font-weight: 600; }
+
+  em { color: $ink; }
+}
+
+.pub .meta,
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 2px 0 6px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: .78rem;
+  font-weight: 500;
+  padding: 3px 11px;
+  border-radius: 999px;
+  border: 1px solid $mit-red;
+  color: $mit-red;
+  background: transparent;
+
+  &:hover {
+    background: $mit-red;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+// ---------- Abstract toggles (inline in the pill row) ------------------------
+// The <details> holds only the summary pill so it sits inline with the other
+// pills; the abstract text lives in a sibling .abstract revealed via [open] ~.
+.meta details.wp {
+  display: inline-flex;
+  margin: 0;
 
   summary {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
     cursor: pointer;
-    font-weight: 600;
-    color: $link-color;
-    padding: 0.3rem 0;
-    margin-top: 0.3rem;
+    font-size: .78rem;
+    font-weight: 500;
+    padding: 3px 11px;
+    border: 1px solid $mit-red;
+    border-radius: 999px;
+    color: $mit-red;
     list-style: none;
-    position: relative;
-    padding-left: 1.5rem;
+    transition: background .15s ease, color .15s ease;
 
-    &::-webkit-details-marker {
-      display: none;
-    }
-
-    &::before {
-      content: "▸";
-      position: absolute;
-      left: 0;
-      font-size: 1rem;
-      transition: transform 0.2s ease;
-    }
+    &::-webkit-details-marker { display: none; }
+    &::marker { content: ""; }
 
     &:hover {
-      text-decoration: underline;
+      background: $mit-red;
+      color: #fff;
     }
   }
 
-  &[open] summary::before {
-    transform: rotate(90deg);
-  }
-
-  p {
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-    padding: 1rem;
-    background-color: #f8f9fa;
-    border-radius: 4px;
-    line-height: 1.7;
-    text-align: justify;
+  &[open] summary {
+    background: $mit-red;
+    color: #fff;
   }
 }
 
-// Publication entries spacing
-.publication-entry {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e9ecef;
-
-  &:last-child {
-    border-bottom: none;
-  }
+.meta .abstract {
+  display: none;
+  flex-basis: 100%;
+  color: $muted;
+  font-size: .9rem;
+  line-height: 1.55;
+  margin: 8px 0 4px;
+  border-left: 3px solid $mit-red;
+  padding-left: 1rem;
 }
 
-// CV iframe container
-.cv-container {
+.meta details.wp[open] ~ .abstract {
+  display: block;
+  animation: abstractDown .25s ease;
+}
+
+@keyframes abstractDown {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+// ---------- Footer: solid MIT-red band ---------------------------------------
+// Flex column so the footer band grows to fill any leftover viewport height
+// on short pages (content keeps its natural height; the red extends down).
+body {
   display: flex;
-  justify-content: center;
-  margin: 2rem 0;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  iframe {
-    border: 2px solid $link-color;
-    border-radius: 8px;
+footer.footer {
+  background: $mit-red;
+  color: $footer-fg;
+  margin-top: 16px;
+  padding: 0;
+  border-top: 0;
+  font-size: .92rem;
+  flex: 1 0 auto;
+}
+
+footer.footer .nav-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 6px 24px;
+  background: transparent;
+  color: $footer-fg;
+  min-height: 0;
+}
+
+footer.footer .nav-footer-left,
+footer.footer .nav-footer-center,
+footer.footer .nav-footer-right {
+  flex: unset;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+footer.footer h4 {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: .04em;
+  margin-bottom: 10px;
+}
+
+footer.footer p { margin-bottom: .6rem; }
+
+footer.footer a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: rgba(255, 255, 255, .72);
   }
 }
 
-// Compact spacing for homepage to fit on laptop screen
-p {
-  margin-bottom: 0.75rem !important;
+footer.footer .social,
+footer.footer .social p {
+  display: flex;
+  gap: 14px;
+  margin: 12px 0 0;
+
+  a {
+    display: inline-flex;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+
+    &:hover { color: #fff; }
+  }
+
+  svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+  }
 }
 
-h2 {
-  margin-top: 1rem !important;
-  margin-bottom: 0.5rem !important;
+footer.footer .footer-copy {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  font-size: .82rem;
+  color: #e6ced3;
 }
 
-ul {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
+// ---------- Responsive -------------------------------------------------------
+@media (max-width: 860px) {
+  .hero { padding-top: 36px; }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero .bio,
+  .hero .tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portrait {
+    max-width: 240px;
+    grid-row: 1;
+  }
+
+  footer.footer .nav-footer {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
-li {
-  margin-bottom: 0.25rem !important;
-}
+@media (max-width: 620px) {
+  body { font-size: 16px; }
 
-hr {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
-}
+  .hero h1 { font-size: 2.2rem; }
 
-.columns {
-  margin-bottom: 0.5rem !important;
-}
+  .hero .tagline { font-size: 1.15rem; }
 
-// Reduce spacing between content and footer
-#quarto-content {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 1rem !important;
-}
-
-#quarto-document-content {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-main.content {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.page-columns {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-footer {
-  margin-top: 0.5rem !important;
+  .navbar .navbar-title { font-size: 1rem; }
 }

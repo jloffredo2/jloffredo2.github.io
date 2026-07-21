@@ -45,6 +45,15 @@ Jaffe, Jacob, **Joseph R. Loffredo**, Samuel Baltz, Alejandro Flores, and Charle
 :::
 
 ## Under Review
+::: {.pub}
+Hankinson, Michael, **Joseph R. Loffredo**, and Asya Magazinnik. 2026. "Assessing District Elections as a Remedy in State Voting Rights Acts."
+
+<div class="meta">
+<details class="wp"><summary>Abstract</summary></details>
+<a class="pill" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7154498" target="_blank" rel="noopener">Preprint</a>
+<div class="abstract">As federal voting rights protections recede, state-level voting rights acts (VRAs) have become the principal legal tool for safeguarding minority representation in the United States. We assess what these laws can accomplish using the California Voting Rights Act, which has compelled over 150 cities to replace at-large with district elections. Applying redistricting algorithms across 109 cities, we evaluate how much district elections--and the alternative reforms state VRAs permit--can amplify Latino political influence. District elections prove to be a limited remedy: most cities cannot draw a majority-Latino district and many cannot use districts to meaningfully increase Latino electoral success, even under optimistic assumptions about turnout, cohesion, and crossover voting. By contrast, cumulative voting, ranked choice voting, and limited voting empower Latino voters without relying on favorable geography or mapmakers' discretion. We conclude that policymakers seeking to improve minority representation should be more open to reforms within the proportional representation family.</div>
+</div>
+:::
 
 ::: {.pub}
 **Loffredo, Joseph R.**, Jillian Andres Rothschild, and Alejandro Flores. 2025. "America Decides, Networks Project: How Voters Respond to Election Night Coverage."
@@ -64,10 +73,6 @@ Jaffe, Jacob, **Joseph R. Loffredo**, Samuel Baltz, Alejandro Flores, and Charle
 
 ::: {.pub}
 "State Confidence in Elections: Results, Practice, and Policy" (with Charles Stewart III)
-:::
-
-::: {.pub}
-"Lines for Representation: Assessing District Elections as a Remedy in State Voting Rights Acts" (with Michael Hankinson and Asya Magazinnik)
 :::
 
 ::: {.pub}

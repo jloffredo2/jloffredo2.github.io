@@ -5,7 +5,7 @@ title: "Research"
 ## Publications
 
 ::: {.pub}
-**Loffredo, Joseph R.**, Michael Hankinson, and Asya Magazinnik. 2026. "Reform Drift: How Incumbent Protection Undermines Descriptive Representation in Local Government." *American Journal of Political Science* (conditionally accepted).
+**Loffredo, Joseph R.**, Michael Hankinson, and Asya Magazinnik. 2026. "[Reform Drift: How Incumbent Protection Undermines Descriptive Representation in Local Government](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5372605)." *American Journal of Political Science* (conditionally accepted).
 
 <div class="meta">
 <details class="wp"><summary>Abstract</summary></details>

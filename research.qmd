@@ -35,7 +35,7 @@ Kuriwaki, Shiro, Mason Reece, Samuel Baltz, Aleksandra Conevska, **Joseph R. Lof
 :::
 
 ::: {.pub}
-Jaffe, Jacob, **Joseph R. Loffredo**, Samuel Baltz, Alejandro Flores, and Charles Stewart III. 2024. "[Trust in the Count: Improving Voter Confidence with Post-Election Audits](https://doi.org/10.1093/poq/nfae029)." *Public Opinion Quarterly* 88 (SI): 585-607.
+Jaffe, Jacob\*, **Joseph R. Loffredo**\*, Samuel Baltz, Alejandro Flores, and Charles Stewart III. 2024. "[Trust in the Count: Improving Voter Confidence with Post-Election Audits](https://doi.org/10.1093/poq/nfae029)." *Public Opinion Quarterly* 88 (SI): 585-607. <br><small>\*Joint lead authors.</small>
 
 <div class="meta">
 <details class="wp"><summary>Abstract</summary></details>

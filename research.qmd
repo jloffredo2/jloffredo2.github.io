@@ -82,3 +82,7 @@ Hankinson, Michael, **Joseph R. Loffredo**, and Asya Magazinnik. 2026. "[Assessi
 ::: {.pub}
 "Election Officials as Policy Actors in State Legislatures"
 :::
+
+::: {.pub}
+"[Contesting the Rules of the Game: Organized Groups in Election Policymaking](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7303098)" (**Job Market Paper**)
+:::

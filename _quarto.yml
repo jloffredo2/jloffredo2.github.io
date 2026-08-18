@@ -22,6 +22,8 @@ website:
         href: CV/Loffredo_CV.pdf
       - text: "Research"
         href: research.qmd
+      - text: "Job Market Paper"
+        href: https://drive.google.com/file/d/1HUH2YKRxB66H3sUT8NHEB7dZl5dJECBR/view?usp=drive_link
       - text: "Data/Code"
         href: data.qmd
 

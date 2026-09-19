@@ -9,7 +9,10 @@ project:
 website:
   title: "Joe Loffredo"
   site-url: "https://jloffredo2.github.io"
+  description: "PhD candidate in political science at MIT studying American political institutions, election policy, and legislative politics."
   favicon: favicon.ico
+  open-graph: true
+  twitter-card: true
   google-analytics: "G-5QW563TC6P"
 
   navbar:
@@ -46,5 +49,6 @@ format:
   html:
     theme: [default, custom.scss]
     toc: false
+    link-external-newwindow: true
     include-in-header: _includes/fonts.html
     include-after-body: update-copyright.html

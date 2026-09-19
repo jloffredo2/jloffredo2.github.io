@@ -55,3 +55,9 @@ links the SSRN version.
   address was tried and broke the link in some mail clients; keep it plain.
 - `.RData`, `.Rhistory`, `.Rproj`, and macOS `Icon\r` files are ignored on
   purpose. Do not re-add them.
+- `link-external-newwindow: true` is applied by Quarto's client-side script
+  at page load, so `target="_blank"` will NOT appear in the rendered HTML.
+  Check it in a browser, not with grep.
+- `website: description` only feeds Open Graph / Twitter card tags, which
+  need `open-graph: true` and `twitter-card: true`. The plain
+  `<meta name="description">` comes from each page's own `description:`.

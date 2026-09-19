@@ -1,5 +1,6 @@
 ---
 title: "Research"
+description: "Publications and working papers by Joe Loffredo on election policy, legislative politics, and LLM methods for political science."
 ---
 
 ## Publications

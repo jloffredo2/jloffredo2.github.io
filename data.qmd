@@ -1,5 +1,6 @@
 ---
 title: "Data/Code"
+description: "Datasets and code released by Joe Loffredo, including the State Election Legislation Database and 2020 cast vote records."
 ---
 
 ## State Election Legislation Database

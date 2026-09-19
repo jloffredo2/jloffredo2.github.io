@@ -51,8 +51,7 @@ links the SSRN version.
 - Do not run `quarto render` while `quarto preview` is running; the preview
   can overwrite `_site/` with stale output. Kill preview, `rm -rf _site
   .quarto`, render, restart.
-- The footer email is percent-encoded (`mailto:%6C%6F...`) so harvesters do
-  not see a readable address. HTML entities do not work for this; pandoc
-  decodes them. Keep it percent-encoded when editing.
+- The footer email is a plain `mailto:loffredo@mit.edu`. A percent-encoded
+  address was tried and broke the link in some mail clients; keep it plain.
 - `.RData`, `.Rhistory`, `.Rproj`, and macOS `Icon\r` files are ignored on
   purpose. Do not re-add them.

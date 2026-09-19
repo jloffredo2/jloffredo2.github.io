@@ -1,7 +1,19 @@
+# Quarto build output and caches
 /.quarto/
 /_site/
-.DS_Store
-*.log
-.Rproj.user
-
 **/*.quarto_ipynb
+*_files/
+
+# R session files. The .RData here was 3.7 MB of unrelated workspace.
+.RData
+.Rhistory
+.Rproj.user
+*.Rproj
+
+# Local tooling / OS cruft
+.claude/
+.playwright-mcp/
+.DS_Store
+Icon?
+*.log
+settings.local.json

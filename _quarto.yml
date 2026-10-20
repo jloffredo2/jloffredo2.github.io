@@ -34,7 +34,7 @@ website:
     left: |
       <h4>Joe Loffredo</h4>
       <p>PhD Candidate, Department of Political Science<br>Massachusetts Institute of Technology</p>
-      <p class="footer-copy">© <span id="current-year">2025</span> Joe Loffredo · Built with <a href="https://quarto.org">Quarto</a></p>
+      <p class="footer-copy">© <span id="current-year">2026</span> Joe Loffredo · Built with <a href="https://quarto.org">Quarto</a></p>
     center: |
       <h4>Contact</h4>
       <div class="social">

@@ -23,7 +23,6 @@ Source repo: <https://github.com/jloffredo2/jloffredo2.github.io>.
     index.qmd          bio + portrait
     research.qmd       publications, working papers, in progress
     data.qmd           datasets and code
-    contact.qmd        rendered but NOT in the navbar
     CV/Loffredo_CV.pdf, CV/Loffredo_JMP.pdf   served as-is (see resources)
     profile.jpeg       headshot (no EXIF GPS; check again if replaced)
     CNAME              custom domain; must stay in `resources:`

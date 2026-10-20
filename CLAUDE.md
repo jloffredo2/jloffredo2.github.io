@@ -23,7 +23,7 @@ Source repo: <https://github.com/jloffredo2/jloffredo2.github.io>.
     index.qmd          bio + portrait
     research.qmd       publications, working papers, in progress
     data.qmd           datasets and code
-    teaching.qmd, contact.qmd   rendered but NOT in the navbar
+    contact.qmd        rendered but NOT in the navbar
     CV/Loffredo_CV.pdf, CV/Loffredo_JMP.pdf   served as-is (see resources)
     profile.jpeg       headshot (no EXIF GPS; check again if replaced)
     CNAME              custom domain; must stay in `resources:`
@@ -61,3 +61,6 @@ links the SSRN version.
 - `website: description` only feeds Open Graph / Twitter card tags, which
   need `open-graph: true` and `twitter-card: true`. The plain
   `<meta name="description">` comes from each page's own `description:`.
+  `hide-description: true` in `_quarto.yml` keeps that text out of the
+  visible title block; do not remove it. Nothing SEO-related should be
+  visible on the page.

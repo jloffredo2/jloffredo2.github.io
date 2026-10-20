@@ -49,6 +49,7 @@ format:
   html:
     theme: [default, custom.scss]
     toc: false
+    hide-description: true   # keep page descriptions in <meta> tags only, not on the page
     link-external-newwindow: true
     include-in-header: _includes/fonts.html
     include-after-body: update-copyright.html

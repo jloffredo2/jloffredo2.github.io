@@ -1,6 +1,7 @@
 ---
 title: ""
 pagetitle: "Joe Loffredo"
+description: "PhD candidate in political science at MIT studying American political institutions, election policy, and legislative politics."
 ---
 
 ```{=html}

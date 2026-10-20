@@ -1,12 +1,13 @@
 ---
 title: "Data/Code"
+description: "Datasets and code released by Joe Loffredo, including the State Election Legislation Database and 2020 cast vote records."
 ---
 
 ## State Election Legislation Database
 
 **Available on [GitHub](https://github.com/jloffredo2/state-elect-law-db)**.
 
-This dataset is the product of scraping the National Conference of State Legislature's [State Elections Legislation Database](http://www.ncsl.org/research/elections-and-campaigns/elections-legislation-database.aspx) and Voting Rights Lab's [Legislative Tracker](https://tracker.votingrightslab.org/pending/search). Use the available `.csv` or `.Rdata` files to access an up-to-date table of election legislation in the United States.
+This dataset is the product of scraping the National Conference of State Legislatures' [State Elections Legislation Database](https://www.ncsl.org/elections-and-campaigns/state-election-legislation-database) and Voting Rights Lab's [Legislative Tracker](https://tracker.votingrightslab.org/pending/search). Use the available `.csv` or `.Rdata` files to access an up-to-date table of election legislation in the United States.
 
 ## Cast Vote Records: A Database of Ballots from the 2020 U.S. Election
 

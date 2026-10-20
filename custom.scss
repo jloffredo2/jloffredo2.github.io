@@ -192,12 +192,12 @@ code {
   margin-top: 0;
 }
 
-// Don't stretch short pages to fill the viewport — keep the footer close to
-// the content instead of pinned to the bottom of the window. !important is
-// required: Quarto's nav JS sets an inline min-height on this element. Also
-// collapse the fixed 60px bottom row Quarto reserves in its page grid.
+// Quarto's nav JS sets an inline min-height on this element; override it so
+// the flex layout below decides the height. Also collapse the fixed 60px
+// bottom row Quarto reserves in its page grid.
 #quarto-content {
   min-height: 0 !important;
+  flex: 1 0 auto;  // fill leftover viewport height so the footer sits at the bottom
 
   &.page-rows-contents {
     grid-template-rows: [content-top] max-content [content-bottom] minmax(0, max-content) [page-bottom];
@@ -376,8 +376,8 @@ main.content ul li::marker { color: $mit-red; }
 }
 
 // ---------- Footer: solid MIT-red band ---------------------------------------
-// Flex column so the footer band grows to fill any leftover viewport height
-// on short pages (content keeps its natural height; the red extends down).
+// Flex column so short pages pin the footer to the bottom of the window:
+// #quarto-content grows into the leftover space, the footer keeps its height.
 body {
   display: flex;
   flex-direction: column;
@@ -391,7 +391,7 @@ footer.footer {
   padding: 0;
   border-top: 0;
   font-size: .92rem;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
 }
 
 footer.footer .nav-footer {
